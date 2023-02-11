@@ -1,4 +1,3 @@
-
 # ligma
 
 jellyfin server reimplementation that uses a real database (postgres).
@@ -9,7 +8,7 @@ jellyfin server reimplementation that uses a real database (postgres).
 requirements:
 
 * golang 1.20
-* [oapi-codegen](https://github.com/deepmap/oapi-codegen)
+* [openapi-generator-go](https://github.com/contiamo/openapi-generator-go)
 * postgres >= 15
 
 
@@ -19,4 +18,4 @@ build:
     cd ligma
     go generate ./...
     go get ./...
-    go build ./cmd/ligmaD
+    go build ./cmd/ligmaD -o ligmaD.bin

@@ -3808,13 +3808,13 @@
           "description": "Configuration.",
           "content": {
             "application/json": {
-              "schema": { }
+              "schema": {}
             },
             "text/json": {
-              "schema": { }
+              "schema": {}
             },
             "application/*+json": {
-              "schema": { }
+              "schema": {}
             }
           },
           "required": true
@@ -45662,11 +45662,7 @@
             "nullable": true
           },
           "CurrentProgram": {
-            "allOf": [
-              {
-                "$ref": "#/components/schemas/BaseItemDto"
-              }
-            ],
+            "type": "object",
             "description": "Gets or sets the current program.",
             "nullable": true
           }
@@ -51650,7 +51646,7 @@
             "nullable": true
           }
         },
-        "additionalProperties": { }
+        "additionalProperties": {}
       },
       "ProfileCondition": {
         "type": "object",
@@ -52151,18 +52147,11 @@
             "nullable": true
           },
           "AlbumArtist": {
-            "allOf": [
-              {
-                "$ref": "#/components/schemas/RemoteSearchResult"
-              }
-            ],
+            "type": "array",
             "nullable": true
           },
           "Artists": {
             "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/RemoteSearchResult"
-            },
             "nullable": true
           }
         },
