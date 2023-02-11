@@ -1,3 +1,3 @@
-module ligma.network/ligmaD
+module github.com/majestrate/ligma
 
-go 1.19
+go 1.20
