@@ -17,5 +17,5 @@ build:
 
     git clone https://github.com/majestrate/ligma
     cd ligma
-    go generate
+    go generate ./...
     go build ./cmd/ligmaD
